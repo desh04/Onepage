@@ -1,0 +1,18 @@
+styled-component
+npm install --save styled-components
+
+
+
+react-router-dom
+
+
+
+used react-icons
+React icons 
+npm install react-icons --save
+
+
+
+React Scroll
+npm install react-scroll
+
