@@ -24,7 +24,7 @@
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='about'>ABOUT</NavLinks>
+                            <NavLinks to='about'>About</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to='discover'>Discover</NavLinks>
