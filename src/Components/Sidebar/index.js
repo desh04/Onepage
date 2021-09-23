@@ -1,29 +1,29 @@
 import React from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper , SideBtnWrap, SidebarMenu, SidebarLink, SidebarRoute } from './SidebarElements';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle }) => {
     return (
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about">        {/* Remember these 'to' are react-scroll link not router link */}
+                    <SidebarLink to="about" onClick={toggle}>        {/* Remember these 'to' are react-scroll link not router link */}
                         About
                     </SidebarLink>
-                    <SidebarLink to="discover">
+                    <SidebarLink to="discover" onClick={toggle}> 
                         Discover
                     </SidebarLink>
-                    <SidebarLink to="services">
+                    <SidebarLink to="services" onClick={toggle}>
                         Services
                     </SidebarLink>
-                    <SidebarLink to="signup">
+                    <SidebarLink to="signup" onClick={toggle}>
                         Sign Up
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/signin">Sign In</SidebarRoute>   {/* in"to" attribute used '/' before the name cause it's a react router link not scroll link */}
+                    <SidebarRoute to="/signin" onClick={toggle}>Sign In</SidebarRoute>   {/* in"to" attribute used '/' before the name cause it's a react router link not scroll link */}
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

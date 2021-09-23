@@ -13,13 +13,13 @@
     NavBtnLink 
 } from './NavbarElement';
  
- const index = () => {
+ const index = ({ toggle }) => {
      return (
         <>
             <Nav> {/* stock component */}
                 <NavbarContainer>
                     <NavLogo>DD</NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={ toggle } >
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
