@@ -13,7 +13,7 @@
     NavBtnLink 
 } from './NavbarElement';
  
- const index = ({ toggle }) => {
+ const Navbar = ({ toggle }) => {
      return (
         <>
             <Nav> {/* stock component */}
@@ -45,5 +45,5 @@
      )
  }
  
- export default index;
+ export default Navbar;
  
