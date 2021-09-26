@@ -19,3 +19,9 @@ npm install react-scroll
 
 video downloaded from the site - pexels.com
 
+google fonts 'encode Sans Expanded' is used, copied the link from the 
+google font site and paste in the header of the index.html file in the 
+public folder. 
+
+
+
