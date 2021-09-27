@@ -23,7 +23,7 @@ const HeroSection = () => {
     }
 
     return (
-        <HeroContainer id="heroSection">
+        <HeroContainer id="home">
             <HeroBg>
                 <VideoBg playsInline autoPlay loop muted src={Video} type="video/mp4" />
                 {/* <ImgBg src={bgImg} /> */}
@@ -40,6 +40,11 @@ const HeroSection = () => {
                         onMouseLeave={onHover}
                         primary='true'
                         dark='true'
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
                     >
                         Go to the site {hover ? <ArrowForward /> : <ArrowRight />} 
                     </Button>
